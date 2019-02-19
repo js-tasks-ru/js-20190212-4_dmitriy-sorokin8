@@ -5,4 +5,6 @@
  * @returns {number}
  */
 function sum (m, n) {
+   let s = +m + +n;
+   return(s);
 }
