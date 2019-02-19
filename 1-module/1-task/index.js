@@ -6,9 +6,6 @@
  */
 "use strict";
 
-   let m = +prompt("Введите число"),
-       n = +prompt("Введите степень");
-
 function pow (m, n) {
 
    if ((m >= 1) & (n >= 1)) {
@@ -21,5 +18,3 @@ function pow (m, n) {
        return("числа должны быть больше 1");
    }
  }
-
- alert(pow(m,n));
