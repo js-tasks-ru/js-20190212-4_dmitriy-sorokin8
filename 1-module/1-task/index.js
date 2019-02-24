@@ -4,6 +4,8 @@
  * @param {number} n index
  * @returns {number}
  */
+"use strict";
+
 function pow (m, n) {
     if ((m >= 1) & (n >= 1)) {
         let res = 1;
