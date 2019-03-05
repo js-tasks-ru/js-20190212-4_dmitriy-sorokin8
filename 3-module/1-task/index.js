@@ -11,7 +11,7 @@ function showSalary(data, age) {
             x.push(key["name"] + ", " + key["balance"]);
             }
         } 
-  return x.join('\n');;
+  return x.join('\n');
 }
 
 
