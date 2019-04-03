@@ -42,9 +42,9 @@
                 let left = coord.left + (target.offsetWidth - this.el.offsetWidth) / 2;
                     if (left < 0) left = 0;
 
-                    let top = coord.top + this.el.offsetHeight - this.indent;
+                    let top = coord.top + target.offsetHeight + this.indent;
                     if (heightDoc - top < this.el.offsetHeight) {
-                      top = coord.top - this.el.offsetHeight - this.indent;
+                      top = coord.top - (this.el.offsetHeight + this.indent);
                     }
       
                 this.el.style.left = left + 'px';
