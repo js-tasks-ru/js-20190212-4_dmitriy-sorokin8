@@ -40,7 +40,7 @@
                 const heightDoc = document.documentElement.clientHeight;
 
                 let left = coord.left + (target.offsetWidth - this.el.offsetWidth) / 2;
-                    if (left < 0) left = 0;
+                    if (left < 0) left = 8;
 
                     let top = coord.top + target.offsetHeight + this.indent;
                     if (heightDoc - top < this.el.offsetHeight) {
@@ -49,6 +49,18 @@
       
                 this.el.style.left = left + 'px';
                 this.el.style.top = top + 'px';
+
+
+                let tooltips = this.el;
+                let span = document.querySelector('.left_top');
+
+                let spanRect = span.getBoundingClientRect();
+                let elRect = tooltips.getBoundingClientRect();
+
+                console.log(spanRect.bottom < elRect.top);
+                console.log(spanRect.left === elRect.left);
+                console.log(spanRect.left);
+                console.log(elRect.left);
 
             };
 
